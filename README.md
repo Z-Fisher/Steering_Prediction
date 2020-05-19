@@ -11,7 +11,7 @@ For more details, please read our [final report](https://github.com/akhild555/st
 
 The dataset we used for the first half of the project comes from Udacity and Lyft’s Perception Challenge, which can be found [here](https://github.com/udacity/self-driving-car/tree/master/datasets). The training data contains 101,398 images that were recorded using three RGB cameras (labeled left, center, and right) mounted on the vehicle and were time-stamped with the vehicle’s steering wheel angle, motor torque, GPS coordinates, and various sensor data. The test set contained 5614 images labeled with the steering angle.
 
-The second half of the project used training data collected from [Udacity’s self-driving car simulator](https://github.com/udacity/self-driving-car-sim). The simulator came loaded with two tracks. Track 1 is a relative simple track with mostly simple curves and no hills. Track 2 has a lot more challenging curves and is hilly. Images of these tracks are show in Figure 2. Unfortunately, for unknown reasons, the simulator did not allow us to control the throttle during training data collection; we were forced to collect the steering angle data at full throttle. We drove around the tracks and collected a total of 126,712 images, and the corresponding steering angles, for each track.
+The second half of the project used training data collected from [Udacity’s self-driving car simulator](https://github.com/udacity/self-driving-car-sim). The simulator came loaded with two tracks. Track 1 is a relative simple track with mostly simple curves and no hills. Track 2 has a lot more challenging curves and is hilly. Images of these tracks are shown below. Unfortunately, for unknown reasons, the simulator did not allow us to control the throttle during training data collection; we were forced to collect the steering angle data at full throttle. We drove around the tracks and collected a total of 126,712 images, and the corresponding steering angles, for each track.
 
 Real-World Dataset          |  Udacity Simulator Track 1 | Udacity Simulator Track 2
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -34,7 +34,7 @@ As can be seen, the custom ResNet-18 architecture yielded the lowest RMSE test e
   <img src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/real_world.gif"> 
 </p>  
 
-The model performs well overall but fails at certain points during the video. One of them is due to poor lighting conditions. All these mistakes would have led to a crash if the model were steering a real car.
+The model performs well overall but fails at certain points during the video, which are shown below. One of them is due to poor lighting conditions. All these mistakes would have led to a crash if the model were steering a real car.
 
 <p align="center">
   <img src="Images/vid1.png" width="250" />
