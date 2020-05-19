@@ -32,7 +32,8 @@ As can be seen, the custom ResNet-18 architecture yielded the lowest RMSE test e
 
 The model performs well overall but fails at certain points during the video. One of them is due to poor lighting conditions. All these mistakes would have led to a crash if the model were steering a real car.
 
-![](Images/vid1.png)        |  ![](Images/vid2.png)  |  ![](Images/vid3png)
+Real-World Dataset          |  Udacity Simulator Dataset | Other
+![](Images/vid1.png =160x120)   |  ![](Images/vid2.png =160x120)  |  ![](Images/vid3.png =160x120)
 
 
 ## Phase 2: Udacity Self-Driving Car Simulator
