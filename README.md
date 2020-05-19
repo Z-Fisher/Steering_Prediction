@@ -13,9 +13,9 @@ The dataset we used for the first half of the project comes from Udacity and Lyf
 
 The second half of the project used training data collected from [Udacity’s self-driving car simulator](https://github.com/udacity/self-driving-car-sim). The simulator came loaded with two tracks. Track 1 is a relative simple track with mostly simple curves and no hills. Track 2 has a lot more challenging curves and is hilly. Images of these tracks are show in Figure 2. Unfortunately, for unknown reasons, the simulator did not allow us to control the throttle during training data collection; we were forced to collect the steering angle data at full throttle. We drove around the tracks and collected a total of 126,712 images, and the corresponding steering angles, for each track.
 
-Real-World Dataset          |  Udacity Simulator Dataset
-:-------------------------:|:-------------------------:
-![](Images/pre1.png)        |  ![](Images/pre4.png)
+Real-World Dataset          |  Udacity Simulator Track 1 | Udacity Simulator Track 2
+:-------------------------:|:-------------------------:|:-------------------------:
+![](Images/pre1.png)        |  ![](Images/pre4.png) | ![](Images/pre5.png)
 
 
 ## Phase 1: Real World Driving Steering Prediction
