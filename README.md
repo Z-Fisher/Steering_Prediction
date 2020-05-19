@@ -78,7 +78,7 @@ In the gif below, model 7 was used to drive the car on track 1. Model 7 was trai
 
 Although we were able to successfully drive the car, we believe the ResNet-18 architecture may not be best suited for real time steering angle prediction. The depth and complexity of the network may have been inhibiting the car from quickly correcting errors in steering angle. In future work, we would like to build models for throttle prediction to fully drive the car autonomously. Additionally, we want to use more complex self-driving car simulators that have multiple lanes, other cars and are generally more realistic. We would like to expand this work to autonomously drive a car in more challenging simulators, exploring more sophisticated techniques such as LSTM networks and reinforcement learning.
 
-## Acknowledgement
+## Acknowledgements
 
 We would like to acknowledge Udacity, Lyft, and Comma.ai for providing the real world dataset. We would also like to acknowledge Udacity for providing the self-driving car simulator and the accompanying code to test our models in the simulator. For a full list of references, please see our [final report](https://github.com/akhild555/steering_angle_prediction/blob/master/Final_Report_Summary_Slides.pdf).
 
