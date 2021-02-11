@@ -1,3 +1,13 @@
+
+This project was completed with two classmates as the result of our open-ended final project for the graduate course, Applied Machine Learning at Penn. Using Python and the libraries PyTorch and OpenCV, we applied a deep convolutional neural network (CNN) on several hours of vehicle dashcam footage to predict the steering angle of the vehicle. The goal of this project was to explore some of the current approaches applied by groups like Nvidia, Comma, and Lyft, as well as to try new strategy in hopes of achieving better accuracy. This project had a phase labeling real-world driving video and another in which a simulated car was controlled by these predicted labels. Scenes from the training data that are intentionally challenging include: driving towards a sunset, sharp turns, erratic lighting changes from shadows, inconsistent lane line paint, and traffic.
+
+
+Click HERE to view a formal report describing the technical approach implemented in this project. I also highly recommend viewing "Video: Full Project Presentation" since it has video of the real-world car predictions and simulated autonomous car control.
+
+
+
+
+
 # Steering Angle Prediction Using ResNet-18
 This was the final project completed as a group with Zachary Fisher and Anthony Nguyen for CIS 519 at UPenn.
 
