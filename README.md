@@ -15,7 +15,7 @@ The goal of this project was to use deep learning methods to accurately predict 
 
 In phase 1 of the project, we began by evaluating various neural network architectures to predict the steering angle of a car using a real-world dataset provided by Udacity, Lyft, and Comma.ai. We found that a custom ResNet-18 architecture had the lowest test RMSE out of all the architectures studied and our score would have placed us in sixth place on the original Udacity leaderboard. We wanted to see how this architecture would actually behave on a car so we used Udacity’s car simulator to test it. In phase 2 of the project, various pre-processing methods were applied to generate eight models using the ResNet-18 architecture. Although we were able to successfully drive the car in the simulator, we found the ResNet-18 architecture may not be best suited for real time steering angle prediction due to its complexity.
 
-For more details, please read our [final report](https://github.com/akhild555/steering_angle_prediction/blob/master/Final_Report_Summary_Slides.pdf). Additionally, please check out our summary video [here](https://vimeo.com/415693080).
+For more details, please read our [final report](Final_Report_Summary_Slides.pdf). Additionally, please check out our summary video [here](https://vimeo.com/415693080).
 
 ## Datasets
 
@@ -35,13 +35,13 @@ Real-World Dataset          |  Udacity Simulator Track 1 | Udacity Simulator Tra
 We trained various neural network architectures to predict the steering angle of a car using a real-world dataset. The results are shown in the table below.
 
 <p align="center">
-  <img width="400" src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/results1.PNG"> 
+  <img width="400" src="Images/results1.PNG"> 
 </p>  
 
 As can be seen, the custom ResNet-18 architecture yielded the lowest RMSE test error. The video below shows the predicted and ground truth steering angles overlayed on the test video.
 
 <p align="center">
-  <img src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/real_world.gif"> 
+  <img src="Images/real_world.gif"> 
 </p>  
 
 The model performs well overall but fails at certain points during the video, which are shown below. One of them is due to poor lighting conditions. All these mistakes would have led to a crash if the model were steering a real car.
@@ -62,25 +62,25 @@ For phase 2 of the project, we wanted to understand how the ResNet-18 architectu
 For phase 2, we used various pre-processing techniques to train models using the ResNet-18 architecture on training data collected on track 1 and track 2 in the simulator. Track 1 was a relatively easy track with a constant slopes and generally gentle curves. Track 2 was much more challenging with hills and drastic turns. The models trained are shown in the table below.
 
 <p align="center">
-  <img width="550" src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/results2.PNG"> 
+  <img width="550" src="Images/results2.PNG"> 
 </p>  
 
 To test these models on track 1 we set the throttle to a constant value and allowed the model to steer the car. As shown in the plot, models 1-6 all failed to complete track 1, failing at a particularly challenging curve in the track. Since model 7 and 8 were trained on track 2,  which had a lot more curves with tighter radii, these models had no problem rounding the challenging curve in track 1 and completing the track.
 
 <p align="center">
-  <img width="500" src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/plot.JPG"> 
+  <img width="500" src="Images/plot.JPG"> 
 </p>  
 
 In the gif below, model 3 was used to drive the car on track 1 in the opposite direction to which the training data was collected in order to simulate a test environment. This poor performance at this curve is representative of models 1-6, which were all trained using track 1 training data.
 
 <p align="center">
-  <img src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/t1_trained.gif"> 
+  <img src="Images/t1_trained.gif"> 
 </p>  
 
 In the gif below, model 7 was used to drive the car on track 1. Model 7 was trained on data collected from track 2, which contains much tighter curves than track 1. As a result, model 7 is able to round the most challenging curve on this track and complete the track at an average speed of 6.8 mph. The car does sway a lot more on the track than with models trained on track 1. We believe this occurs since the lanes are much narrower in the training data collected in track 2, so the model forces the car to stay close to the lanes but tends to overcorrect.
 
 <p align="center">
-  <img src="https://github.com/akhild555/steering_angle_prediction/blob/master/Images/t2_trained.gif"> 
+  <img src="Images/t2_trained.gif"> 
 </p>  
 
 
@@ -90,6 +90,6 @@ Although we were able to successfully drive the car, we believe the ResNet-18 ar
 
 ## Acknowledgements
 
-We would like to acknowledge Udacity, Lyft, and Comma.ai for providing the real world dataset. We would also like to acknowledge Udacity for providing the self-driving car simulator and the accompanying code to test our models in the simulator. For a full list of references, please see our [final report](https://github.com/akhild555/steering_angle_prediction/blob/master/Final_Report_Summary_Slides.pdf).
+We would like to acknowledge Udacity, Lyft, and Comma.ai for providing the real world dataset. We would also like to acknowledge Udacity for providing the self-driving car simulator and the accompanying code to test our models in the simulator. For a full list of references, please see our [final report](Final_Report_Summary_Slides.pdf).
 
 
