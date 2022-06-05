@@ -9,7 +9,7 @@ Click HERE to view a formal report describing the technical approach implemente
 
 
 # Steering Angle Prediction Using ResNet-18
-This was the final project completed as a group with Zachary Fisher and Anthony Nguyen for CIS 519 at UPenn.
+This was the final project completed as a group with Akhil Devarakonda and Anthony Nguyen for CIS 519 at UPenn.
 
 The goal of this project was to use deep learning methods to accurately predict car steering angle. 
 
