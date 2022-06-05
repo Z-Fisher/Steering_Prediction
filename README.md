@@ -4,7 +4,7 @@ This was the final project completed as a group (Zachary Fisher, Akhil Devarakon
 The goal of this project was to use deep learning methods to accurately predict car steering angle in challenging datasets including sunsets, sharp turns, drastic exposure changes, shadows, inconsistent lane paint, and traffic.
 
 In phase 1 of the project, we began by evaluating various neural network architectures to predict the steering angle of a car using a real-world dataset provided by Udacity, Lyft, and Comma.ai. We found that a custom ResNet-18 architecture had the lowest test RMSE out of all the architectures studied and our score would have placed us in sixth place on the original Udacity leaderboard. We wanted to see how this architecture would actually behave on a car so we used Udacity’s car simulator to test it. 
-In phase 2 of the project, we applied our model trained on real-world data to simulation to be able to control a vehicle using the steering angle predictions. Although the car was able to successfully complete some tracks in the simulator, we found the inference rate slightly too slow; causing steering wobble.
+In phase 2 of the project, we moved to simulation in order to control a vehicle using the steering angle predictions. Although the car was able to successfully complete some tracks in the simulator, we found the inference rate slightly too slow; causing steering wobble.
 
 For more details, please read our [final report](Final_Report_Summary_Slides.pdf). Additionally, please check out our summary video [here](https://vimeo.com/415693080).
 
