@@ -1,19 +1,10 @@
-
-This project was completed with two classmates as the result of our open-ended final project for the graduate course, Applied Machine Learning at Penn. Using Python and the libraries PyTorch and OpenCV, we applied a deep convolutional neural network (CNN) on several hours of vehicle dashcam footage to predict the steering angle of the vehicle. The goal of this project was to explore some of the current approaches applied by groups like Nvidia, Comma, and Lyft, as well as to try new strategy in hopes of achieving better accuracy. This project had a phase labeling real-world driving video and another in which a simulated car was controlled by these predicted labels. Scenes from the training data that are intentionally challenging include: driving towards a sunset, sharp turns, erratic lighting changes from shadows, inconsistent lane line paint, and traffic.
-
-
-Click HERE to view a formal report describing the technical approach implemented in this project. I also highly recommend viewing "Video: Full Project Presentation" since it has video of the real-world car predictions and simulated autonomous car control.
-
-
-
-
-
 # Steering Angle Prediction Using ResNet-18
 This was the final project completed as a group (Zachary Fisher, Akhil Devarakonda and Anthony Nguyen) for CIS 519 at UPenn.
 
-The goal of this project was to use deep learning methods to accurately predict car steering angle. 
+The goal of this project was to use deep learning methods to accurately predict car steering angle in challenging datasets including sunsets, sharp turns, drastic exposure changes, shadows, inconsistent lane paint, and traffic.
 
-In phase 1 of the project, we began by evaluating various neural network architectures to predict the steering angle of a car using a real-world dataset provided by Udacity, Lyft, and Comma.ai. We found that a custom ResNet-18 architecture had the lowest test RMSE out of all the architectures studied and our score would have placed us in sixth place on the original Udacity leaderboard. We wanted to see how this architecture would actually behave on a car so we used Udacity’s car simulator to test it. In phase 2 of the project, various pre-processing methods were applied to generate eight models using the ResNet-18 architecture. Although we were able to successfully drive the car in the simulator, we found the ResNet-18 architecture may not be best suited for real time steering angle prediction due to its complexity.
+In phase 1 of the project, we began by evaluating various neural network architectures to predict the steering angle of a car using a real-world dataset provided by Udacity, Lyft, and Comma.ai. We found that a custom ResNet-18 architecture had the lowest test RMSE out of all the architectures studied and our score would have placed us in sixth place on the original Udacity leaderboard. We wanted to see how this architecture would actually behave on a car so we used Udacity’s car simulator to test it. 
+In phase 2 of the project, we applied our model trained on real-world data to simulation to be able to control a vehicle using the steering angle predictions. Although the car was able to successfully complete some tracks in the simulator, we found the inference rate slightly too slow; causing steering wobble.
 
 For more details, please read our [final report](Final_Report_Summary_Slides.pdf). Additionally, please check out our summary video [here](https://vimeo.com/415693080).
 
